@@ -1,0 +1,39 @@
+#banner {
+  background-color: var(--c-gray);
+  padding: 4rem 0;
+}
+#banner .slider {
+  display: none;
+  animation: fade 400ms linear;
+}
+#banner .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: slideFromLeft 300ms linear;
+}
+
+#banner .name,
+#banner .short_des {
+  font-weight: 700;
+}
+
+#banner .name {
+  font-size: 1.4rem;
+}
+
+#banner .short_des {
+  font-size: 5rem;
+  line-height: 1.2;
+}
+
+#banner .long_des {
+  font-size: 1.2rem;
+}
+#banner img {
+  width: 50%;
+  animation: slideFromRight linear 400ms;
+}
+
+

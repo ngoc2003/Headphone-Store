@@ -1,0 +1,19 @@
+#topbar {
+  padding: 12px 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+#topbar .list-horizontal {
+  display: flex;
+}
+
+#topbar .list-horizontal .item {
+  border-right: 2px solid var(--c-text);
+  padding: 0 10px;
+  line-height: 1.2;
+}
+#topbar .list-horizontal .item:last-child {
+  border-right: unset;
+}
