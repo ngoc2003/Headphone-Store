@@ -12,10 +12,10 @@
             <h3 class="name">
               {{ banner.name }}
             </h3>
-            <h2 class="short_des">
+            <h2 class="short_des truncate-text truncate-text-2">
               {{ banner.short_des }}
             </h2>
-            <p class="long_des">
+            <p class="long_des truncate-text truncate-text-4">
               {{ banner.long_des }}
             </p>
             <div>
@@ -24,7 +24,7 @@
               </button>
             </div>
           </div>
-          <img :src="banner.images" :alt="banner.name" />
+          <img :src="banner.images[0]" :alt="banner.name" />
         </div>
       </div>
       <span class="navigation center-center prev" @click="prevSlide"
@@ -38,13 +38,12 @@
 </template>
 
 <script setup>
-import { ref, onMounted, reactive } from 'vue'
-import { bannerData } from '@/data'
+import { ref, onMounted, nextTick } from 'vue'
+import { products as bannerData } from '@/data'
 
 const bannerContainer = ref()
 const slideActive = ref(0)
 const intervalId = ref()
-const data = reactive([...bannerData])
 
 function clearTime() {
   clearInterval(intervalId.value)
@@ -64,28 +63,32 @@ function showSlide() {
 }
 
 function nextSlide() {
-  showSlide()
   clearTime()
 
-  if (slideActive.value >= data.length - 1) {
+  if (slideActive.value >= bannerData.length - 1) {
     slideActive.value = 0
   } else {
     slideActive.value += 1
   }
+  nextTick(() => {
+    showSlide()
+  })
 }
 
 function prevSlide() {
-  showSlide()
   clearTime()
 
   if (slideActive.value <= 0) {
-    slideActive.value = data.length - 1
+    slideActive.value = bannerData.length - 1
   } else {
     slideActive.value -= 1
   }
+  nextTick(() => {
+    showSlide()
+  })
 }
 
 onMounted(() => {
-  clearTime()
+  nextSlide()
 })
 </script>

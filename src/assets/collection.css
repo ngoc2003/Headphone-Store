@@ -1,3 +1,29 @@
 #collection {
   padding: 20px 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 30px;
+}
+.collection-card {
+  flex: 1 1 0;
+  background-color: var(--c-gray);
+  padding: 20px 14px;
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+}
+.collection-card__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.collection-card__title {
+  font-weight: 800;
+  font-size: 25px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.collection-card img {
+  width: 120px;
 }

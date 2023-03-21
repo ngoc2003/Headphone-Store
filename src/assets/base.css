@@ -100,8 +100,7 @@ body {
   padding: 16px 24px;
   border: 1px solid transparent;
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 20px;
+  font-weight: 800;
   cursor: pointer;
   transition: 100ms linear;
 }
@@ -113,4 +112,31 @@ body {
   background-color: #fff;
   color: var(--c-black);
   border: 1px solid var(--c-black);
+}
+
+.button--small {
+  padding: 4px 8px;
+}
+
+.truncate-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.truncate-text-2 {
+  -webkit-line-clamp: 2;
+}
+
+.truncate-text-4 {
+  -webkit-line-clamp: 4;
+}
+
+.heading-section {
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+  margin: 30px 0;
 }

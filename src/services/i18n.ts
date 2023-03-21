@@ -9,8 +9,13 @@ const messages = {
       search: 'Search'
     },
     button: {
-      shopNow: 'Shop now'
-    }
+      shopNow: 'Shop now',
+      shopCollection: 'Shop Collection'
+    },
+    heading: {
+      latestProduct: 'Latest Product'
+    },
+    price: '${price}'
   },
   vi: {
     phoneNumber: '+840123456789',
@@ -20,7 +25,11 @@ const messages = {
       search: 'Tìm kiếm'
     },
     button: {
-      shopNow: 'Mua ngay'
+      shopNow: 'Mua ngay',
+      shopCollection: 'Mua bộ sưu tập'
+    },
+    heading: {
+      latestProduct: 'Sản phẩm mới nhất'
     }
   }
 }

@@ -2,10 +2,12 @@
   background-color: var(--c-gray);
   padding: 4rem 0;
 }
+
 #banner .slider {
   display: none;
   animation: fade 400ms linear;
 }
+
 #banner .content {
   flex: 1;
   display: flex;
@@ -24,16 +26,15 @@
 }
 
 #banner .short_des {
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 1.2;
 }
 
 #banner .long_des {
   font-size: 1.2rem;
 }
+
 #banner img {
   width: 50%;
   animation: slideFromRight linear 400ms;
 }
-
-

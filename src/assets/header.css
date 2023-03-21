@@ -12,6 +12,10 @@
   font-weight: 700;
 }
 
+#header-navigation a.header-navigation-item--active::after {
+  width: 100%;
+}
+
 #header #search-bar {
   flex: 1;
   max-width: 550px;
