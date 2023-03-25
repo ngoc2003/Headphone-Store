@@ -6,7 +6,7 @@ import OutStanding from '@/containers/layouts/HomePage/OutStanding.vue'
 </script>
 
 <template>
-  <main>
+  <main class="main">
     <BannerSection />
     <CollectionSection />
     <LatestProduct />
