@@ -5,11 +5,11 @@ export default {
       contactInfo: [
         {
           key: 'phoneNumber',
-          label: this.$t('phoneNumber')
+          label:'+840123456789'
         },
         {
           key: 'email',
-          label: this.$t('email')
+          label: 'atshop@mail.com'
         }
       ],
       languageSupport: [

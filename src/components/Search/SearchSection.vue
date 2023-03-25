@@ -1,6 +1,6 @@
 <template>
   <div id="search-bar">
-    <input :placeholder="$t('placeholder.search')" type="text" />
+    <input placeholder="Search" type="text" />
     <i class="icon fas fa-search"></i>
   </div>
 </template>
