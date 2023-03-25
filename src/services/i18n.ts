@@ -33,10 +33,11 @@ const messages = {
     }
   }
 }
-
 const i18n = createI18n({
-  locale: 'en',
-  fallbackLocale: 'en',
+  locale: 'en', // <--- 1
+  fallbackLocale: 'en', // <--- 2
+  legacy: false, // <--- 3
+  globalInjection: true,
   messages
 })
 

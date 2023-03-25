@@ -20,7 +20,7 @@
             </p>
             <div>
               <button class="button button--dark">
-                {{ t('button.shopNow') }}
+                {{ $t('button.shopNow') }}
               </button>
             </div>
           </div>
@@ -40,8 +40,6 @@
 <script setup>
 import { ref, onMounted, nextTick } from 'vue'
 import { products as bannerData } from '@/data'
-import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
 
 const bannerContainer = ref()
 const slideActive = ref(0)
