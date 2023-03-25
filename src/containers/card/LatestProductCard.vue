@@ -1,5 +1,5 @@
 <script setup>
-import { ref, defineProps, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
 const imageContainer = ref()
 const actions = ref()
@@ -10,7 +10,7 @@ const props = defineProps({
   images: Array,
   price: Number
 })
-
+console.log(props.images)
 function handleChangeImageToInitial() {
   image.value = props.images[0]
   const buttons = actions.value.querySelectorAll('button')

@@ -1,13 +1,13 @@
 <!-- eslint-disable vue/no-reserved-component-names -->
 <template>
-  <Topbar />
-  <HeaderVue />
+  <TopbarSection />
+  <HeaderSectionVue />
   <HeaderNavigation />
   <RouterView />
 </template>
 
 <script setup lang="ts">
-import HeaderVue from './containers/layouts/Header.vue'
-import Topbar from './containers/layouts/Header/Topbar.vue'
+import HeaderSectionVue from './containers/layouts/HeaderSection.vue'
+import TopbarSection from './containers/layouts/Header/TopbarSection.vue'
 import HeaderNavigation from './containers/layouts/Header/HeaderNavigation.vue'
 </script>

@@ -2,7 +2,6 @@
 import CollectionCard from '@/containers/card/CollectionCard.vue'
 import { products } from '@/data'
 const collections = products.slice(0, 3)
-console.log(collections)
 </script>
 <template>
   <div id="collection" class="container between-center">

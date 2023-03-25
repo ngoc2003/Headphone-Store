@@ -1,13 +1,15 @@
 <script setup lang="ts">
-import Banner from '@/containers/layouts/HomePage/Banner.vue'
-import Collection from '@/containers/layouts/HomePage/Collection.vue'
+import BannerSection from '@/containers/layouts/HomePage/BannerSection.vue'
+import CollectionSection from '@/containers/layouts/HomePage/CollectionSection.vue'
 import LatestProduct from '@/containers/layouts/HomePage/LatestProduct.vue'
+import OutStanding from '@/containers/layouts/HomePage/OutStanding.vue'
 </script>
 
 <template>
   <main>
-    <Banner />
-    <Collection />
+    <BannerSection />
+    <CollectionSection />
     <LatestProduct />
+    <OutStanding />
   </main>
 </template>

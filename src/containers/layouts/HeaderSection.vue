@@ -2,7 +2,7 @@
   <div id="header">
     <div class="container--small between-center">
       <a href="#" class="logo">{{ $t('logo') }}</a>
-      <Search />
+      <SearchSection />
       <div class="icon-group">
         <i class="icon icon--big fas fa-bell"></i>
         <i class="icon icon--big fas fa-user"></i>
@@ -13,10 +13,10 @@
 </template>
 
 <script>
-import Search from '@/components/Search/Search.vue'
+import SearchSection from '@/components/Search/SearchSection.vue'
 export default {
   components: {
-    Search
+    SearchSection
   }
 }
 </script>
