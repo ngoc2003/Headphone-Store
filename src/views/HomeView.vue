@@ -8,8 +8,8 @@ import OutStanding from '@/containers/layouts/HomePage/OutStanding.vue'
 <template>
   <main class="main">
     <BannerSection />
-    <CollectionSection />
+    <!-- <CollectionSection />
     <LatestProduct />
-    <OutStanding />
+    <OutStanding /> -->
   </main>
 </template>
