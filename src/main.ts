@@ -8,3 +8,14 @@ const app = createApp(App)
 app.use(router)
 
 app.mount('#app')
+
+// <i18n>
+//   {
+//     "en": {
+//       "button": {
+//         "shopNow": "dhgfjkn"
+//       }
+//     },
+
+//   }
+//   </i18n>

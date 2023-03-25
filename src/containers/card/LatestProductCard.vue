@@ -1,5 +1,10 @@
 <script setup>
 import { ref, onMounted } from 'vue'
+<<<<<<< HEAD
+=======
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+>>>>>>> main
 const imageContainer = ref()
 const actions = ref()
 const image = ref()
