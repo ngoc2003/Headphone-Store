@@ -1,7 +1,7 @@
 <template>
   <div id="header">
     <div class="container--small between-center">
-      <a href="#" class="logo">{{ $t('logo') }}</a>
+      <a href="#" class="logo">{{ t('logo') }}</a>
       <SearchSection />
       <div class="icon-group">
         <i class="icon icon--big fas fa-bell"></i>
@@ -14,4 +14,7 @@
 
 <script setup>
 import SearchSection from '@/components/Search/SearchSection.vue'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
