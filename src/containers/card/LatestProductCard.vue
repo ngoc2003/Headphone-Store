@@ -1,10 +1,5 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-<<<<<<< HEAD
-=======
-import { useI18n } from 'vue-i18n'
-const { t } = useI18n()
->>>>>>> main
 const imageContainer = ref()
 const actions = ref()
 const image = ref()
@@ -44,12 +39,12 @@ onMounted(() => {
       <img :src="image" alt="" />
       <div ref="actions" class="latest-product__item__action">
         <button class="button button--small button--dark">shop now</button>
-        // <button class="button button--small button--dark">hi</button>
+        <button class="button button--small button--dark">hi</button>
       </div>
     </div>
     <p class="latest-product__item__name">
       {{ name }}
     </p>
-    <p class="latest-product__item__price">{ { price }} $</p>
+    <p class="latest-product__item__price">{{ price }} $</p>
   </div>
 </template>
