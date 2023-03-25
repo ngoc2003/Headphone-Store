@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
 const imageContainer = ref()
 const actions = ref()
 const image = ref()
@@ -39,7 +40,7 @@ onMounted(() => {
     <div ref="imageContainer" class="latest-product__item__image">
       <img :src="image" alt="" />
       <div ref="actions" class="latest-product__item__action">
-        <button class="button button--small button--dark">{{ $t('button.shopNow') }}</button>
+        <button class="button button--small button--dark">{{ t('button.shopNow') }}</button>
         <button class="button button--small button--dark">hi</button>
       </div>
     </div>
@@ -47,7 +48,7 @@ onMounted(() => {
       {{ name }}
     </p>
     <p class="latest-product__item__price">
-      {{ $t('price', { price }) }}
+      {{ t('price', { price }) }}
     </p>
   </div>
 </template>
