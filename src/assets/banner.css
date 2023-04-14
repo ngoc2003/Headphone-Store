@@ -1,15 +1,17 @@
 #banner {
   background-color: var(--c-gray);
   padding: 4rem 0;
+  position: relative;
 }
 
 #banner .slider {
   display: none;
+  width: 100%;
   animation: fade 400ms linear;
 }
 
 #banner .content {
-  flex: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -26,15 +28,45 @@
 }
 
 #banner .short_des {
-  font-size: 4.5rem;
+  font-size: 3rem;
   line-height: 1.2;
 }
 
 #banner .long_des {
   font-size: 1.2rem;
 }
-
+#banner .img {
+  width: 100%;
+  min-width: 300px;
+}
 #banner img {
-  width: 50%;
+  width: 100%;
   animation: slideFromRight linear 400ms;
+}
+@media screen and (max-width: 750px) {
+  #banner{
+    padding-bottom: 7rem;
+  }
+  #banner .slider {
+    flex-direction: column-reverse !important;
+  }
+  #banner button {
+    width: 100%;
+  }
+  #banner img {
+    max-width: 400px;
+  }
+  #banner .navigation {
+    margin-top: 20px;
+    top: 100%;
+    display: inline-flex;
+  }
+  #banner .next {
+    right: 50%;
+    transform: translateX(120%);
+  }
+  #banner .prev {
+    left: 50%;
+    transform: translateX(-120%);
+  }
 }

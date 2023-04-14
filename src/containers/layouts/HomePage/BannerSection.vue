@@ -19,12 +19,12 @@
               {{ banner.long_des }}
             </p>
             <div>
-              <button class="button button--dark">
-                shop now
-              </button>
+              <button class="button button--dark">shop now</button>
             </div>
           </div>
-          <img :src="banner.images[0]" :alt="banner.name" />
+          <div class="img center-center">
+            <img :src="banner.images[0]" :alt="banner.name" />
+          </div>
         </div>
       </div>
       <span class="navigation center-center prev" @click="prevSlide"

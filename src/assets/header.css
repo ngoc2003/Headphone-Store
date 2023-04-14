@@ -7,10 +7,6 @@
 #header .container--small {
   gap: 30px;
 }
-#header .logo {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
 
 #header-navigation a.header-navigation-item--active::after {
   width: 100%;

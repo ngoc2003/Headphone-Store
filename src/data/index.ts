@@ -18,6 +18,24 @@ import colTune2 from '@/assets/images/JBL_TUNE_2.png'
 import enduranc_1 from '@/assets/images/ENDURANCE_1.webp'
 import enduranc_2 from '@/assets/images/ENDURANCE_2.webp'
 
+import blog1 from '@/assets/images/blog1.png'
+import blog2 from '@/assets/images/blog2.png'
+
+export const blogs = [
+  {
+    image: blog1,
+    title: 'Lorem ipsum dolor sit amet',
+    description:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.'
+  },
+  {
+    image: blog2,
+    title: 'Lorem ipsum dolor sit amet',
+    description:
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, eligendi dolore. Sapiente omnis numquam mollitia asperiores animi, veritatis sint illo magnam, voluptatum labore, quam ducimus! Nisi doloremque praesentium laudantium repellat.'
+  }
+]
+
 export const products = [
   {
     images: [colBlack1, colBlack2],

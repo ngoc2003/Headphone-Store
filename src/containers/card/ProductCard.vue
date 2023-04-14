@@ -9,7 +9,6 @@ const props = defineProps({
   images: Array,
   price: Number
 })
-console.log(props.images)
 function handleChangeImageToInitial() {
   image.value = props.images[0]
   const buttons = actions.value.querySelectorAll('button')
@@ -34,17 +33,17 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="latest-product__item">
-    <div ref="imageContainer" class="latest-product__item__image">
+  <div class="product__item">
+    <div ref="imageContainer" class="product__item__image">
       <img :src="image" alt="" />
-      <div ref="actions" class="latest-product__item__action">
+      <div ref="actions" class="product__item__action">
         <button class="button button--small button--dark">shop now</button>
         <button class="button button--small button--dark">hi</button>
       </div>
     </div>
-    <p class="latest-product__item__name">
+    <p class="product__item__name">
       {{ name }}
     </p>
-    <p class="latest-product__item__price">{{ price }} $</p>
+    <p class="product__item__price">{{ price }} $</p>
   </div>
 </template>

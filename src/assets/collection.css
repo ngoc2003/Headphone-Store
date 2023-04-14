@@ -27,3 +27,8 @@
 .collection-card img {
   width: 120px;
 }
+@media screen and (max-width: 1200px) {
+  #collection {
+    flex-direction: column;
+  }
+}

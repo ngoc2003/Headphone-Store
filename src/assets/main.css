@@ -10,6 +10,8 @@
 
 @import './keyframes.css';
 
-@import './latestProduct.css';
-
 @import './outStanding.css';
+
+@import './latestBlog.css';
+
+@import './footer.css';

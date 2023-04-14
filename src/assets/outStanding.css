@@ -6,10 +6,10 @@
   font-size: 40px;
   font-weight: 800;
 }
+#outStanding .outStanding__description {
+  font-weight: 500;
+}
 #outStanding .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   gap: 50px;
 }
 #outStanding img {
@@ -23,4 +23,14 @@
   display: flex;
   flex-direction: column;
   gap: 30px;
+}
+@media screen and (max-width: 900px) {
+  #outStanding .container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 750px) {
+  #outStanding button {
+    width: 100%;
+  }
 }

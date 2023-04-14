@@ -1,6 +1,6 @@
 <template>
   <div id="outStanding">
-    <div class="container">
+    <div class="container center-center">
       <div class="img-container">
         <img :src="data.images[0]" alt="" />
       </div>
